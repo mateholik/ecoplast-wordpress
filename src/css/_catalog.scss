@@ -1,0 +1,247 @@
+.catalog {
+  .hero {
+    padding: 21.5rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    @include phone {
+      padding: 4.2rem 0;
+      min-height: 25rem;
+      @include center;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 6.4rem;
+      line-height: 8.2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #fff;
+      @include phone {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      @include phone {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .variant {
+    margin-top: 7rem;
+    @include phone {
+      margin-top: 2rem;
+    }
+    .row {
+      @include center(space-between);
+      @include phone {
+        flex-direction: column;
+      }
+      .col {
+        &:first-of-type {
+          margin-right: 10%;
+          @include phone {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .top {
+      margin-bottom: 5rem;
+      @include phone {
+        margin-bottom: 2rem;
+      }
+      .row {
+        @include phone {
+          flex-direction: column-reverse;
+        }
+        .col {
+          &:last-of-type {
+            @include phone {
+              max-width: 50rem;
+              margin: 0 auto;
+              margin-bottom: 3rem;
+            }
+          }
+        }
+      }
+      h2 {
+        font-size: 4.4rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+        @include phone {
+          font-size: 2.2rem;
+          margin-bottom: 2rem;
+        }
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 2.6rem;
+        margin-bottom: 1.5rem;
+        @include phone {
+          font-size: 1.8rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+      li {
+        @include center(flex-start);
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        @include phone {
+          font-size: 1.4rem;
+        }
+        img {
+          width: 2rem;
+          margin-right: 1.2rem;
+          @include phone {
+            width: 1.8rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+    .tables {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 -1.5rem;
+      @include phone {
+        display: block;
+      }
+      &-title {
+        font-size: 2.6rem;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        @include phone {
+          text-align: center;
+          font-size: 1.8rem;
+          margin-bottom: 3rem;
+        }
+      }
+      &-more {
+        display: none;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $primary;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+        @include phone {
+          @include center;
+        }
+        img {
+          width: 1.5rem;
+          margin-top: 1rem;
+        }
+        .rotate {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .table {
+      border-radius: 1.5rem;
+      overflow: hidden;
+      border: 1px solid #cfcfcf;
+      &-holder {
+        max-width: 57rem;
+        width: 50%;
+        padding: 0 1.5rem;
+        margin-bottom: 6rem;
+        &--show {
+          display: block !important;
+        }
+        &:not(:first-of-type) {
+          @include phone {
+            display: none;
+          }
+        }
+        @include phone {
+          max-width: 50rem;
+          width: 100%;
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
+      }
+      .title {
+        padding: 1.5rem 0;
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-align: center;
+        background-color: #4983f4;
+        color: #fff;
+        @include phone {
+          padding: 1.2rem 0;
+          font-size: 1.6rem;
+        }
+      }
+      .content {
+        li {
+          display: flex;
+          justify-content: space-between;
+          &:nth-child(2n) {
+            background-color: #f5f5f5;
+          }
+          span {
+            display: block;
+            padding: 1.2rem 0;
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-align: center;
+            width: 50%;
+            &:first-of-type {
+              border-right: 1px solid #d7d7d7;
+            }
+            @include phone {
+              padding: 1.2rem 0;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+    .images {
+      @include center;
+      margin-bottom: 4rem;
+      @include phone {
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+      div {
+        width: 33.33%;
+        border-radius: 1.5rem;
+        position: relative;
+        overflow: hidden;
+        @include phone {
+          max-width: 50rem;
+          margin: 0 auto;
+          width: auto;
+        }
+        @media (max-width: 500px) {
+          margin: 0 -1.5rem;
+          border-radius: 0;
+        }
+        &:not(:last-of-type) {
+          margin-right: 2rem;
+          @include phone {
+            margin: 0 -1.5rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .btn-holder {
+      @include center;
+    }
+  }
+}
