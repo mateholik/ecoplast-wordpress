@@ -68,7 +68,7 @@ get_header(); ?>
               </div>
             </div>
             <div class="btn-holder">
-              <a href="#" class="btn">Katalogas</a>
+              <a href="https://ecoplast.lt/katalogas/" class="btn">Katalogas</a>
             </div>
           <?php endif;
           ?>

@@ -30,9 +30,9 @@
       <div class="contacts">
         <ul>
           <li>
-            <a href="tel:+37067859364"
+            <a href="tel:+37067503048"
               ><img loading="lazy" width="20" height="20" src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/phone-light.svg" alt="phone" />Tel:
-              +37067859364</a
+              +37067503048</a
             >
           </li>
           <li>
